@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 3em;
+    color: #34cdfb;
+}
+h3 {
+    padding: 15px 0;
+}
+
+table {
+    background: #f9f9f9;
+}
+
+table tr th,
+table tr td {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+table tr th {
+    background: #ddd;
+    font-weight: normal;
+}
+
+table tbody tr:nth-child(even) {
+    background: #ededed;
+}

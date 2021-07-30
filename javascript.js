@@ -1,0 +1,5 @@
+$(function(){
+
+    $(".res-tables").resTables();
+    
+})

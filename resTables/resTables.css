@@ -1,0 +1,43 @@
+/* Hidden for Desktop and tablet sizes */
+.responsive-table td:before{
+    display: none;
+}
+
+@media screen and (max-width: 639px) {
+    .responsive-table,
+    .responsive-table tbody,
+    .responsive-table tfoot,
+    .responsive-table td,
+    .responsive-table tr{
+        display: block;
+    }
+
+    .responsive-table tbody td{
+        border-width: 0;
+        padding: 10px 0;
+        position: relative;
+        padding-left: 50% !important;
+    }
+
+    .responsive-table tr{
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+    .responsive-table tr.expanded {
+        border-bottom-width: 0;
+    }
+
+    .responsive-table thead{
+        display: none;
+    }
+
+    .responsive-table td:before{
+        display: block;
+        position: absolute;
+        left: 10px;
+        padding: 3px 0;
+        line-height: 14px;
+        white-space: normal;
+        max-width: 48%;
+    }
+}
